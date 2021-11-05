@@ -1,0 +1,21 @@
+.errorContainer {
+    padding-top: 1.5rem;
+    color: rgb(var(--venia-global-color-error));
+    line-height: var(--venia-global-lineHeight-300);
+}
+
+.descriptionContainer {
+    padding-bottom: 1.5rem;
+    color: rgb(var(--venia-global-color-text));
+    line-height: var(--venia-global-lineHeight-300);
+}
+
+.textContainer {
+    padding-top: 1.5rem;
+    color: rgb(var(--venia-global-color-text));
+    line-height: var(--venia-global-lineHeight-300);
+}
+
+.option {
+    padding: 0.5rem 0rem;
+}
