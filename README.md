@@ -10,10 +10,8 @@ This add-on integrates [Donations Suite extension for Magento 2](https://www.mag
 - Localization using react-intl
 
 ## Upload the extension
-1. Create directory `@mageworx/donations-veniapwa` in the root of your project
-2. Copy this project to `@mageworx/donations-veniapwa`
-3. Run `yarn add file:./@mageworx/donations-veniapwa` in the root of your project
-4. Open `local-intercept.js` in the root of your project and put this code into `function localIntercept`. Pay attention, `function localIntercept` must have `targets` as parameter (you can see example of `local-intercept.js` in `@mageworx/donations-veniapwa/documentation`).
+1. Run `yarn add @mageworx/donations-veniapwa` or `npm i @mageworx/giftcards-veniapwa` in the root of your project
+2. Open `local-intercept.js` in the root of your project and put this code into `function localIntercept`. Pay attention, `function localIntercept` must have `targets` as parameter (you can see example of `local-intercept.js` in `@mageworx/donations-veniapwa/documentation`).
 ```
 /* MageWorx donations-veniapwa start */
 const donationsTargetables = Targetables.using(targets);
@@ -46,11 +44,11 @@ PriceAdjustmentsCheckout_donations.insertAfterJSX(
 );
 /* MageWorx donations-veniapwa end */
 ```
-5. Check that your `local-intercept` has this code before `module.exports`, if don't have you should add them (you can see example of `local-intercept.js` in `@mageworx/donations-veniapwa/documentation`)
+3. Check that your `local-intercept` has this code before `module.exports`, if don't have you should add them (you can see example of `local-intercept.js` in `@mageworx/donations-veniapwa/documentation`)
 ```
 const { Targetables } = require('@magento/pwa-buildpack');
 ```
-6. Let's run your project
+4. Let's run your project
 ```
 yarn watch
 ```
